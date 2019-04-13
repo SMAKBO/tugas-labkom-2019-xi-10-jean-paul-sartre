@@ -61,6 +61,37 @@
   p.white {color:#e0e0eb;}
   p {outline-color:#993333;}
   p.outset {outline-style: outset;}
+  
+  * {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 230px;}
+
+.left {
+  width: 35%;
+}
+
+.right {
+  width: 65%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 </style>
 
 </head>
@@ -163,15 +194,12 @@
   </section>
   <br>
   <br>
-  <div class="row align-items-center no-gutters mb-5 mb-lg-4">
-  <div class="col-xl-6 col-lg-5">
-  <div class="featured-text-right text-center text-lg-right">
-    <br>
-    <p>Jean-Paul Sartre lahir pada 21 Juni 1905 di Paris. Dia merupakan anak satu-satunya dari Jean-Baptiste Sartre, seorang perwira dari French Navy, dan Anne Marie Schweitzer. Ibunya merupakan seorang Alsatian dan merupakan sepupu dari Albert Schweitzer. </p><br><br>
+  <div class="row">
+  <div class="column right" style="background-color:#ffecb3">
+    <p style="margin-top:12%;">Jean-Paul Sartre lahir pada 21 Juni 1905 di Paris. Dia merupakan anak satu-satunya dari Jean-Baptiste Sartre, seorang perwira dari French Navy, dan Anne Marie Schweitzer. Ibunya merupakan seorang Alsatian dan merupakan sepupu dari Albert Schweitzer.</p>
   </div>
-  </div>
-    <div class="col-xl-6 col-lg-7">
-     <img class="img-fluid mb-3 mb-lg-0 h-text" src="https://img-s2.onedio.com/id-5bff4468e1835002127bc153/rev-0/raw/s-fe805e7f65f2c0a771ecc13bb61f4904508b6e9d.jpg" style="border-radius: 50%; width:300px margin-left:8%;margin-right:auto;display:block;" alt=""></div>
+  <div class="column left" style="background-color:#ccffff">
+   <img src="https://img-s2.onedio.com/id-5bff4468e1835002127bc153/rev-0/raw/s-fe805e7f65f2c0a771ecc13bb61f4904508b6e9d.jpg" style="border-radius: 50%; margin-left:auto ;margin-right:auto;display:block;" height="200" width="260"  alt="">
   </div>
   </div>
   <div class="container">
