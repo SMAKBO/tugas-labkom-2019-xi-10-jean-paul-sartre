@@ -213,15 +213,24 @@
 
 body, html {height: 100%;}
 
-.parallax 
-	{
-  	 background-image: url("../img/jpsquoteg.jpg");
-	 height: 100%;
-	 background-attachment: fixed;
-	 background-position: center;
-	 background-repeat: no-repeat;
-	 background-size: cover;
+.parallax {background-image: url("../img/jpsquoteg.jpg");
+	 	   height: 700px;
+	 	   background-attachment: fixed;
+	 	   background-position: center;
+	 	   background-repeat: no-repeat;
+	 	   background-size: 155%;
+	 	   position: relative;}
+
+@media(max-width: 992px)
+	{.parallax{height: 500px;
+			   background-size: 160%;}
 	}
+
+@media(max-width: 768px)
+	{.parallax{height: 300px;
+			   background-size: 160%;}
+	}
+
 
 .center {display: block;
   		 margin-left: auto;
