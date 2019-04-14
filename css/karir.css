@@ -34,8 +34,7 @@
 			  border-bottom:none;
 			  background-color:transparent;
 			  -webkit-transition:background-color .3s ease-in-out;
-			  transition:background-color .3s ease-in-out
-			  max-width:720px;}
+			  transition:background-color .3s ease-in-out;}
 	 
 	 #mainNav .navbar-brand{padding:.5rem 0;
 	 						color:rgba(255,255,255,.5)}
